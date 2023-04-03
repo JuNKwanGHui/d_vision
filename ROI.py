@@ -5,7 +5,7 @@ import cv2
 
 #img = cv2.imread('#')
 
-video_file = '/Users/choehyeonseog/Desktop/test.mp4/'
+video_file = '/Users/choehyeonseog/Desktop/crosswalk.jpeg'
  
 cap = cv2.VideoCapture(video_file)
 if cap.isOpened():
