@@ -1,9 +1,9 @@
 import cv2
 import cartest3
 
-def main(): 
+def main(bbox_ff): 
     video_file = '/Users/choehyeonseog/Desktop/test.mp4'
-    event_frame = cartest3.main()
+    event_frame = cartest3.main(bbox_ff)
     frame = 0
     print(event_frame)
 

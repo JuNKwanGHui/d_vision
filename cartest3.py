@@ -1,9 +1,10 @@
 import cv2
 import numpy as np
 #파일을 불러와 2차원배열로 저장
-car_index = np.loadtxt("/Users/choehyeonseog/Desktop/Yolov5_DeepSort_Pytorch/boundingbox.txt", dtype=int)
+#car_index = np.loadtxt("/Users/choehyeonseog/Desktop/Yolov5_DeepSort_Pytorch/boundingbox.txt", dtype=int)
 #numpy 배열 모두 표시
 np.set_printoptions(threshold=np.inf)
+
 
 def car_scale(car_index):
     car_label = np.array([])
@@ -87,7 +88,7 @@ def car_scale_com(car_index):
     return event_frame
 
 
-def main():
+def main(car_index):
     event_frame = []
     event_frame = car_scale_com(car_index)
     print(event_frame)
